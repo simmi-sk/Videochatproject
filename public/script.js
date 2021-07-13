@@ -24,8 +24,9 @@ const peers = {}
 
 var peer = new Peer(undefined, {
     path: '/peerjs',
-    host: ' https://temp-video-chat-app.herokuapp.com',
-    port: '3030',
+    secure: true,
+    host: 'temp-video-chat-app.herokuapp.com',
+    port: 443,
     });
 
 navigator.mediaDevices.getUserMedia({
